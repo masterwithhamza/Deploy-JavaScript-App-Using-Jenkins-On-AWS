@@ -1,0 +1,213 @@
+/* Global styles */
+body {
+  font-family: 'Georgia', serif;
+  
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  animation-name: aiAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: green;
+}
+
+
+@keyframes aiAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Image container */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  animation-name: pulseImages;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* AI image styles */
+.ai-image {
+  width: 432px;
+  height: 432px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulseImages {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Additional styles for AI theme */
+.university-name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.about-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.light-theme {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+/* Additional styles for light theme */
+
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.animated-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation-name: pulseAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.copy-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes pulseAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.image-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      gap: 100px;
+      margin-bottom: 20px;
+    }
+    
+    .ai-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      object-fit: fit;
+    }

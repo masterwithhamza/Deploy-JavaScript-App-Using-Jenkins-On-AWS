@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Project Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* CSS styles for the animation */
+        @keyframes textAnimation {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Add any other CSS styles for your page here */
+        
+    </style>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    
+    <script>
+        var text = "This is only DevOps Project Demo.Present by : Ahsan Irshad & Rashid Imran.DevOps, short for Development and Operations, is an innovative approach to software development that emphasizes collaboration, communication, and integration between development teams and operations teams.It has gained significant traction in the tech industry due to its ability to enhance efficiency, reduce errors, and accelerate the delivery of high-quality software products.In this paragraph, we will explore the key concepts, benefits, and practices associated with DevOps.At its core, DevOps aims to break down the silos between development and operations teams by fostering a culture of collaboration and shared responsibility. It encourages both teams to work together from the early stages of software development, ensuring that the entire lifecycle of a product is considered.By promoting frequent and open communication, DevOps fosters an environment where feedback, ideas, and concerns can be shared freely, leading to better outcomes";
+      
+        var index = 0;
+        var heading = document.getElementById("heading");
+        
+        function animateText() {
+            if (index < text.length) {
+                heading.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(animateText, 100);
+            }
+        }
+        
+        heading.style.animation = "textAnimation 1s ease-in-out";
+        animateText();
+    </script>
+</body>
+</html>
