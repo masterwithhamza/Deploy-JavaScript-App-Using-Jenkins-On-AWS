@@ -1,0 +1,13 @@
+﻿version: "1"
+
+services:
+  web:
+    image: p1  
+    ports:
+      - "80:80"  
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html  
+      - ./2ndpage.html:/usr/share/nginx/html/2ndpage.html  
+      - ./images:/app/images  
+      - ./style.css:/usr/share/nginx/html/style.css 
+      - ./script.js:/usr/share/nginx/html/script.js 
